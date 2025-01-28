@@ -54,7 +54,7 @@ Inside the script, you’ll see a placeholder email address (`email@email.com`).
 
 The script runs whenever a *new* meeting request arrives in your Inbox:
 
-1. It checks if the meeting subject contains `Canceled` (case-insensitive). If so, it **skips** sending a conflict message (this prevents notifications for canceled or updated meetings).
+1. It checks if the meeting subject contains `Canceled` (case-insensitive). If so, it **skips** sending a conflict message (this prevents notifications for canceled meetings).
 2. It then retrieves the proposed AppointmentItem to compare its start/end times with your existing calendar items.
 3. If there’s a conflict, it sends a condescending, automated message back to the sender, including:
    - The subject of the conflicting meeting.
