@@ -76,7 +76,7 @@ Sub SendConflictNotification(meetingReq As Outlook.MeetingItem)
     mail.Subject = "[Auto-Notification] Meeting Invitation Conflict"
     
     mail.Body = _
-        "Your requested meeting, """ & meetingSubject & """, conflicts with an existing appointment on this calendar (caleb.banzhaf1@t-mobile.com)." & vbCrLf & vbCrLf & _
+        "Your requested meeting, """ & meetingSubject & """, conflicts with an existing appointment on this calendar (email@email.com)." & vbCrLf & vbCrLf & _
         "Please use Outlook's Scheduling Assistant to view available time slots for all meeting participants and propose a different time to avoid overlap." & vbCrLf & vbCrLf & _
         "This is an automated notification from Outlook." & vbCrLf & _
         "No further action is required on your part until a new meeting request is sent."
