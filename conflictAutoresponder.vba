@@ -1,4 +1,4 @@
-' update these values for yyour work start and end time
+' update these values for your work start and end time
 Private Const WORK_START_HOUR As Integer = 9  ' 9 AM
 Private Const WORK_END_HOUR As Integer = 17   ' 5 PM
 Private mConflictType As String
