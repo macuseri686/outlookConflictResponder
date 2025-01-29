@@ -206,13 +206,13 @@ Sub SendConflictNotification(meetingReq As Outlook.MeetingItem)
     ' Check the type of conflict using the module-level variable
     If GetConflictType() = "OutsideHours" Then
         messageBody = _
-            "Your requested meeting, """ & meetingSubject & """, is scheduled outside of working hours (" & workHoursText & ", Monday-Friday) for this calendar (caleb.banzhaf1@t-mobile.com)." & vbCrLf & vbCrLf & _
+            "Your requested meeting, """ & meetingSubject & """, is scheduled outside of working hours (" & workHoursText & ", Monday-Friday) for this calendar (email@email.com)." & vbCrLf & vbCrLf & _
             "If this event is non-work related and the time is intentional, you may disregard this message. Otherwise, please consider scheduling during business hours." & vbCrLf & vbCrLf & _
             "This is an automated notification from Outlook." & vbCrLf & _
             "No further action is required on your part until a new meeting request is sent."
     Else
         messageBody = _
-            "Your requested meeting, """ & meetingSubject & """, conflicts with an existing appointment on this calendar (caleb.banzhaf1@t-mobile.com)." & vbCrLf & vbCrLf & _
+            "Your requested meeting, """ & meetingSubject & """, conflicts with an existing appointment on this calendar (email@email.com)." & vbCrLf & vbCrLf & _
             "Please use Outlook's Scheduling Assistant to view available time slots for all meeting participants and propose a different time to avoid overlap." & vbCrLf & vbCrLf & _
             "This is an automated notification from Outlook." & vbCrLf & _
             "No further action is required on your part until a new meeting request is sent."
